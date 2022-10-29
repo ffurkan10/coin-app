@@ -1,0 +1,111 @@
+.coin {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    button {
+      padding: 10px;
+      background-color: #8dc647;
+      border-radius: 5px;
+      width: 100px;
+      cursor: pointer;
+    }
+  }
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    &__names {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 50px;
+        font-size: 18px;
+      }
+    }
+    &__values {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+        width: 150px;
+      }
+    }
+  }
+  &__container {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid gray;
+      padding: 20px 0px 20px 0px;
+      &:hover {
+        transition: all 0.2s ease-in;
+        background-color: rgb(228, 227, 227);
+      }
+      &__name {
+        display: flex;
+        align-items: center;
+        width: 600px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        &__rank {
+          display: flex;
+          align-items: center;
+          button {
+            outline: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 20px;
+          }
+          span {
+            margin-right: 40px;
+            font-size: 18px;
+          }
+        }
+
+        &__symbol {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 25px;
+            margin-inline: 10px;
+          }
+          p {
+            margin-left: 10px;
+          }
+          p:nth-child(3) {
+            color: gray;
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+        }
+      }
+      &__value {
+        display: flex;
+        align-items: center;
+        li {
+          margin-left: 20px;
+          list-style-type: none;
+          width: 150px;
+        }
+        &--down {
+          color: red;
+        }
+        &--up {
+          color: green;
+        }
+      }
+    }
+  }
+}
