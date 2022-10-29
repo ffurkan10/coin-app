@@ -1,11 +1,15 @@
 import React from "react";
 import Logo from "./Logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__container">
-        <img src={Logo} alt="" />
+        <Link to="/">
+          <img src={Logo} alt="" />
+        </Link>
+
         <div className="navbar__container__btn">
           <button className="navbar__container__btn__login">Login</button>
           <button className="navbar__container__btn__sign">Sign Up</button>
